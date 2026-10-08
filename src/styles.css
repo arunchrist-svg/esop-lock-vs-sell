@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg: #f3f7f5;
+  --color-surface: #ffffff;
+  --color-surface-2: #e7f3ed;
+  --color-fg: #13261c;
+  --color-muted: #5d7368;
+  --color-line: #d3e3db;
+  --color-primary: #217858;
+  --color-primary-dim: #e6f4ee;
+  --color-secondary: #ff7f4c;
+  --color-secondary-dim: #fff1ea;
+  --font-sans: "Outfit", system-ui, sans-serif;
+  --font-display: "Outfit", system-ui, sans-serif;
+  --radius: 1rem;
+}
+
+@layer base {
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+
+  html,
+  body {
+    background: var(--color-bg);
+    color: var(--color-fg);
+    font-family: var(--font-sans);
+  }
+
+  input[type="number"]::-webkit-outer-spin-button,
+  input[type="number"]::-webkit-inner-spin-button {
+    appearance: none;
+    margin: 0;
+  }
+
+  input[type="number"] {
+    appearance: textfield;
+  }
+
+  input {
+    min-width: 0;
+    max-width: 100%;
+  }
+}

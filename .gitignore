@@ -1,0 +1,26 @@
+# dependencies
+node_modules/
+
+# build / deploy
+.vercel/
+dist/
+.output/
+.nitro/
+.tanstack/
+
+# env
+.env
+.env.*
+!.env.example
+
+# logs / OS
+*.log
+.DS_Store
+Thumbs.db
+
+# local preview noise
+.grok/preview.log
+.grok/preview.pid
+
+# large local attachments (not needed to run the app)
+attachments/
